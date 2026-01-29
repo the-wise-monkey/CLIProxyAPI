@@ -1,0 +1,9 @@
+{
+  "name": "cliproxy-wrapper",
+  "version": "1.0.0",
+  "description": "Self-hosted Docker + NPM wrapper for CLIProxyAPI that enables Claude/Codex subscription logins to be used through a local OpenAI-compatible API proxy — no official API keys required.",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "stop": "docker compose down"
+  }
+}

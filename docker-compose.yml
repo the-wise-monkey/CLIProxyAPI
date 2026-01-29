@@ -1,0 +1,17 @@
+services:
+  cliproxyapi:
+    container_name: cliproxyapi
+    restart: unless-stopped
+
+    build: .
+    image: cliproxyapi:latest
+
+    ports:
+      - "8317:8317"
+
+    volumes:
+      - ./config.yaml:/CLIProxyAPI/config.yaml
+      - ./data:/CLIProxyAPI/data
+
+    environment:
+      - TZ=Asia/Shanghai

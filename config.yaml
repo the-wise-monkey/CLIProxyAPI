@@ -1,0 +1,11 @@
+server:
+  host: 0.0.0.0
+  port: 8317
+  data_dir: /CLIProxyAPI/data
+
+providers:
+  claude:
+    enabled: true
+
+  codex:
+    enabled: true
