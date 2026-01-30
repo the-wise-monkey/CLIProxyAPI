@@ -1,9 +1,11 @@
 {
   "name": "cliproxy-wrapper",
   "version": "1.0.0",
-  "description": "Self-hosted Docker + NPM wrapper for CLIProxyAPI that enables Claude/Codex subscription logins to be used through a local OpenAI-compatible API proxy — no official API keys required.",
+  "description": "Self-hosted Docker wrapper for CLIProxyAPI that enables Claude/Codex subscription logins to be used through a local OpenAI-compatible API proxy.",
   "scripts": {
-    "start": "node scripts/start.js",
-    "stop": "docker compose down"
+    "start": "docker compose up -d --build",
+    "stop": "docker compose down",
+    "logs": "docker compose logs -f",
+    "restart": "docker compose restart"
   }
 }

@@ -3,7 +3,7 @@ services:
     container_name: cliproxyapi
     restart: unless-stopped
 
-    build: .
+    build: ./CLIProxyAPI
     image: cliproxyapi:latest
 
     ports:
